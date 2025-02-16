@@ -101,7 +101,7 @@ int main ()
     for ( auto u : a ) cout << u << " "; /// 1 2 3 2 2 3 3
     cout << endl;
 
-
+    // 1st a sort kore then unique kora lagbe
     a = { 1, 1, 2, 2, 2, 3, 3 };
     int n = unique( a.begin(), a.end() ) - a.begin();
 
