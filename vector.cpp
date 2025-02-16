@@ -2,7 +2,7 @@
 using namespace std;
 
 #define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-
+#define endl '\n'
 int main ()
 {
     vector<int> v;
@@ -113,41 +113,17 @@ int main ()
     cout << max_element( a.begin(), a.end() ) - a.begin() << endl; /// 3
     cout << *max_element( a.begin(), a.end() ) << endl; /// 5
 
-    vector<int> v = {2,3,5,5,7,7,1};
-
-    sort(v.begin(),v.end());
-    for(auto i : v){
-        cout << i << " ";
-    }
-    cout << endl;
-
-    unique(v.begin(), v.end());  
-    for(auto i : v){
-        cout << i << " ";
-    }
-    cout << endl;
-
-    int size = unique(v.begin(), v.end()) - v.begin();   
-    for(auto i : v){
-        cout << i << " ";
-    }
-    cout << size << endl;
-
-    vector<int> :: iterator it = max_element(v.begin(), v.end());
-    cout << *it << endl;
-
-    vector<int> :: iterator it1 = max_element(v.begin()+1, v.begin()+4);
+    vector<int> :: iterator it1 = max_element(v.begin(), v.end());
     cout << *it1 << endl;
+
+    vector<int> :: iterator it2 = max_element(v.begin()+1, v.begin()+4);
+    cout << *it2 << endl;
 
     int index = max_element(v.begin()+1, v.begin()+4) - v.begin();
     cout << index << endl;
 
     int index1 = min_element(v.begin(), v.end()) - v.begin();
     cout << index << endl;
-
-    vector< vector<int> > v1;
-    v1.push_back();
-
 
     return 0;
 }
